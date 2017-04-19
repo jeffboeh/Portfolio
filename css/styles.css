@@ -34,7 +34,7 @@ hr.light {
 }
 
 a {
-    color: #9c27b0;
+    color: #c12525;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -159,7 +159,7 @@ a.navbar-brand.page-scroll {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #9c27b0 !important;
+    color: #c12525 !important;
     background-color: transparent;
 }
 
@@ -221,7 +221,7 @@ a.navbar-brand.page-scroll {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fefefe;
+        color: #c12525;
     }
 
     .navbar-default.affix {
