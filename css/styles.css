@@ -93,7 +93,7 @@ img {
 }
 
 .text-primary {
-    color: #9c27b0;
+    color: #ffffff;
 }
 
 .modal-content {
@@ -117,9 +117,8 @@ footer {
 }
 
 .navbar-default {
-    border-color: rgba(35,35,35,.05);
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    background-color: #222;
+    background-color: rgba(0, 0, 0, .5);
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -132,6 +131,12 @@ footer {
     color: #8b27b0;
 }
 
+a.navbar-brand.page-scroll {
+    height: auto;
+    width: 25%;
+    margin-left: 25px !important;
+}
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #181818;
 }
@@ -142,7 +147,7 @@ footer {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: #eee;
 }
@@ -164,12 +169,35 @@ footer {
     background-color: transparent;
 }
 
+.steps-bar .step1 {
+    padding-right: 5%;
+}
+
+.steps-bar .step2 {
+    padding-right: 5%;
+}
+
+.steps-bar .step3 {
+    padding-right: 5%;
+}
+
+.steps-bar .step4 {
+    padding-right: 5%;
+}
+
+.btn.btn-primary.devices {
+    margin-top: 5px !important;
+}
 
 @media(min-width:768px) {
     .navbar-default {
         border-color: transparent;
         background-color: transparent;
-        min-height: 60px;
+        max-height: 80px;
+    }
+
+    .navbar-nav {
+        margin:7.5px -15px;
     }
 
     .navbar-header > .navbar-brand {
@@ -185,7 +213,7 @@ footer {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,0.8);
+        color: rgb(255,255,255);
         padding: 20px;
         letter-spacing: 1.1px;
         text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
@@ -198,11 +226,11 @@ footer {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #222;
+        background-color: rgba(0, 0, 0, .5);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        padding: 20px;
+        padding: 4px 8px 41px 14px;
         letter-spacing: 1px;
     }
 
@@ -229,9 +257,8 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-color: #c9c9c9;
-    background-image: url('https://splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-Slate-Stone-Xeromatic-1440x953.jpg');
-    background-position: center;
+    background-image: url("/assets/curtain2.png");
+     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -258,6 +285,7 @@ header .header-content .inner p {
     color: rgba(255,255,255,0.7);
 }
 
+/*
 #video-background {
   position: absolute;
   right: 0; 
@@ -271,10 +299,26 @@ header .header-content .inner p {
 
 #video-background.collapsing {
   display:none;
+} */
+
+.prodbutton {
+    background-color: rgb(193, 37, 37) !important;
 }
 
 footer {
     background-color:#2d2d2d;
+}
+
+img.box_sizes {
+    width: 63%;
+}
+
+img.devices-pic {
+    width: 50%;
+}
+
+img.colorwheelpic {
+    width: 49%
 }
 
 @media(min-width:768px) {
@@ -317,7 +361,19 @@ footer {
         padding: 100px 0;
     }
 
+    i.icon-lg.ion-cash {
+    color: white;
 }
+
+#four h3 {
+    text-decoration: underline;
+}
+
+
+
+}
+
+ 
 
 .form-control {
     display: block;
@@ -412,6 +468,8 @@ textarea {
 .gallery-box img {
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+    max-height: 315px;
+    min-width: 100%;
 }
 
 .no-gutter > [class*=col-] {
@@ -519,3 +577,63 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cell phone styles */
+
+   @media(max-width: 750px) {
+
+        #video-background {
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: 50%;
+  z-index: 1;
+}
+
+    a.navbar-brand.page-scroll {
+    height: auto;
+    width: 18%;
+    margin-left: 10px !important;
+}
+
+
+.navbar-default {
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
