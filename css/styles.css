@@ -436,6 +436,40 @@ textarea {
 }
 
 
+@media (min-width: 768px) and (max-width: 850px) {
+    #bs-navbar {
+        position: absolute;
+        left: 130px;
+    }
+
+    .navbar-right {
+        padding-left: 30px;
+    }
+
+    .inner {
+        padding-top: 75px;
+    }
+
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+
+    .inner {
+        padding-top: 75px;
+    }
+
+    ul.nav.navbar-nav {
+        position: absolute;
+        left: 200px;
+    }
+
+    ul.nav.navbar-nav.navbar-right {
+    position: absolute;
+    left: 950px;
+}
+
+}
+
 
 @media(min-width:992px) {
     .feature {
