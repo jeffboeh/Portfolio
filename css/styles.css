@@ -17,7 +17,7 @@ body {
 body {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
     background-color: #282828;
-    color: #d3d3d3;
+    color: white;
     webkit-tap-highlight-color: #222;
 }
 
@@ -33,11 +33,19 @@ hr.light {
     border-color: #fff;
 }
 
+h1.cursive {
+    font-family: cursive;
+}
+
 a {
-    color: #c12525;
+    color: white;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+.feature a {
+    color: black;
 }
 
 a:hover,
@@ -71,12 +79,27 @@ img {
 }
 
 .bg-primary {
-    background-color: #333;
+    background-color: #B4CFBB;
+}
+
+section#two {
+    background-color: #D9837D;
+}
+
+section#four {
+    background-color: #B4CFBB;
+}
+
+section#last {
+    background-color: #D9837D;
+    border-top: 1px solid white;
 }
 
 .bg-dark {
     color: #eee;
-    background-color: #222;
+    background-color: #D9837D;
+    border-top: 1px solid white;
+}
 }
 
 .cursive {
@@ -301,20 +324,22 @@ header .header-content .inner p {
   display:none;
 } */
 
-.prodbutton {
-    background-color: rgb(193, 37, 37) !important;
+.btn.prodbutton {
+    background-color: rgba(155,155,155,.2) !important;
 }
 
 footer {
-    background-color:#2d2d2d;
+    background-color:#B4CFBB;
 }
 
 img.box_sizes {
     width: 63%;
+    border-radius: 20px;
 }
 
 img.devices-pic {
     width: 50%;
+    border-radius: 10px;
 }
 
 img.colorwheelpic {
@@ -383,9 +408,9 @@ img.colorwheelpic {
     font-size: 14px;
     line-height: 1.5;
     color: #eee;
-    background-color: #36333d;
+    background-color: #B4CFBB;
     background-image: none;
-    border: 1px solid #36333d;
+    border: 1px solid;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -409,6 +434,8 @@ textarea {
     margin: 50px auto 0;
     max-width: 400px;
 }
+
+
 
 @media(min-width:992px) {
     .feature {
@@ -477,10 +504,14 @@ textarea {
     padding-left: 0;
 }
 
+.btn {
+    background-color: rgba(155, 155, 155, .5) !important;
+}
+
 .btn-default {
     border-color: #fff;
-    color: #222;
-    background-color: #fff;
+    color: white;
+    background-color: rgba(155, 155, 155, .5);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -495,7 +526,7 @@ textarea {
     border-color: #ededed;
     color: #222;
     background-color: #f2f2f2;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .btn-default:active,
@@ -542,11 +573,11 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn.btn-primary:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .btn {
-    border: 0;
+    border: 1px solid white;
     border-radius: 290px;
     font-family: 'Helvetica Neue',Arial,sans-serif;
 }
